@@ -155,13 +155,13 @@ class MainActivity : AppCompatActivity() {
     @SuppressWarnings("deprecation")
     protected fun sendSMSMessage() {
         phoneNo = editText2.getText().toString()
-        message = "Help me I'm in trouble Please call me.Thank you Very much"
+        message = "Help me I'm in trouble Please call me.Thank you Very much."
 
         //ActivityCompat.requestPermissions(this@MainActivity, arrayOf(Manifest.permission.SEND_SMS), SEND_SMS.toInt())ActivityCompat.requestPermissions(this@MainActivity, arrayOf(Manifest.permission.SEND_SMS), SEND_SMS.toInt())
         try {
             val smsManager = SmsManager.getDefault()
             smsManager.sendTextMessage(phoneNo, null, message, null, null)
-            Toast.makeText(applicationContext, "SMS Sent!",
+            Toast.makeText(applicationContext, "SMS Sent successfully!",
                     Toast.LENGTH_LONG).show()
         } catch (e: Exception) {
 
