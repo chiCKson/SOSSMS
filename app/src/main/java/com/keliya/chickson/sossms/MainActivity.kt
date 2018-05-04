@@ -155,7 +155,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressWarnings("deprecation")
     protected fun sendSMSMessage() {
         phoneNo = editText2.getText().toString()
-        message = "Help me I'm in trouble"
+        message = "Help me I'm in trouble Please call me"
 
         //ActivityCompat.requestPermissions(this@MainActivity, arrayOf(Manifest.permission.SEND_SMS), SEND_SMS.toInt())ActivityCompat.requestPermissions(this@MainActivity, arrayOf(Manifest.permission.SEND_SMS), SEND_SMS.toInt())
         try {
